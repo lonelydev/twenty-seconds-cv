@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+
+
+\cvname{Eakan G} % Your name
+\cvjobtitle{Senior Software Engineer} % Job title/career
+\cvnumberphone{+44 7760 912219} % Phone number
+\cvsite{https://linkedin.com/in/eakangk} % Personal website
+\cvmail{eakangk@gmail.com} % Email address
+\github{https://github.com/lonelydev}
+
+\aboutme{
+  My ideal technology role is one in which every working day is like a hack-a-thon; where I’d be analysing, designing, debating, programming, testing and debugging a solution with a team of technologists who love tackling problems and finally releasing the product successfully to clients and engaging with them to gain feedback for improvements that could possibly be released as future enhancements, thereby, not only making a positive impact on client workflows but also improving product value.} %About me section}
+
+%\interests{{Data Mining/5},{Web Application Development/5.8},{UI Design/4}}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+  \twentyitem
+      {Sep 2015 - \\May 2016}
+      {Workflow Manager}
+      {FactSet Europe Limited}
+      {}
+      {
+        {Workflow Manager is FactSet’s web based workflow creation and scheduling application used by Content Integration Engineers to create and schedule jobs that do extract, transform and load.}
+        {\begin{itemize}
+          \item {Supported the team by taking care of infrastructure upgrades, CI enhancements, database issues and automation of weekly release process while they picked up product knowledge.}
+          \item {Introduced the team to :}
+            \begin{itemize}
+            \item {Minification and caching of angular html templates to improve website load times.}
+            \item {Automated \emph{angular unit tests} using \emph{jamsine} and \emph{karma}.}
+            \item {\emph{FakeItEasy} for easy creation of fakes for unit tests.}
+            \end{itemize}
+        \end{itemize}}
+      }
+  \twentyitem
+      {Dec 2013 - \\Nov 2015}
+      {Database Library}
+      {FactSet Europe Limited}
+      {}
+      {
+        {Database Library is the backbone of FactSet’s database updates. It triggers data update dependencies and sends out delay notifications keeping clients and consultants informed of data availability. Refactoring the legacy system was the primary challenge of this role}
+        {\begin{itemize}
+          \item {Improved the legacy website by using jQuery based rich UI components to replace server side controls wherever applicable.}
+          \item {Streamlined notifications from Database Library to the standard internal and external notification system.}
+          \item {Introduced integration tests as a safety net for enhancement to the legacy application.}
+        \end{itemize}}
+      }
+  \twentyitem
+      {Jan 2011 - \\Nov 2013}
+      {FactSet Market Aggregates}
+      {FactSet Europe Limited}
+      {}
+      {{FactSet Market Aggregates provides aggregate values of financial metrics at an index level that help analyse the performance of the market.}
+        {\begin{itemize}
+        \item {Migrated data container from Vision on Linux to \emph{FactSet database} on OpenVMS, thereby improving speed of \emph{custom aggregate} queries from 1s to 500ms.}
+        \item {Researched and implemented \emph{FactSet DB sharding} for FMA's data thereby enabling parallel writes to the database and improving fetch speeds by 60\%.}
+        \item {Further migrated Vision to Vertica and designed appropriate projections improving daily update speeds by 90\%.}
+        \end{itemize}}
+      }
+  \twentyitem
+      {Jun 2007 - \\Jul 2009}
+      {Antillia}
+      {Tech Mahindra Limited}
+      {}
+      {{Recruited as a graduate into British Telecom's Billing solutions project and developed requirements dealing  with BT's Business customers.}
+        {\begin{itemize}
+        \item{Introduced UtPlSql unit testing automation for all code written in PL/SQL to the team and created the first automated test suite for a module for demonstration}
+          \item{Kicked off Test Driven Development in the project as part of BT's initiative to get things Right First Time}
+          \item {Represented the team at BT's colocation centre in Pune for 3 months, supporting the E2E testing efforts by following up fixes for defects.}
+        \end{itemize}}
+      }
+\end{twenty}
+	      %\twentyitem{<dates>}{<title>}{<location>}{<description>}
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+  \twentyitem
+      {2009 - 2010} % Date(s)    	{2015 - 2016 \\ (Expected)}
+      {M.Sc. Web Technologies} % Degree
+      {\href{https://www.southampton.ac.uk/}{University of Southampton}}
+      {England, United Kingdom}
+      {Final Percentage: 67\%}
+     
+  \twentyitem
+    {2003 - 2007} % Date(s)
+    {BEng in Computer Science and Engineering} % Degree
+    {\href{https://www.amrita.edu/campus/coimbatore/}{Amrita University}}
+    {Tamil Nadu, India} % Location
+    {CGPA: 6.3 CGPA}
+    %\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+
+\end{document} 
